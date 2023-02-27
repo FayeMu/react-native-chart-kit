@@ -588,14 +588,7 @@ class LineChart extends AbstractChart {
                 : null}
             </G>
             <G>
-              {withInnerLines
-                ? this.renderVerticalLines({
-                    ...config,
-                    data: data.datasets[0].data,
-                    paddingTop,
-                    paddingRight
-                  })
-                : withOuterLines
+              {withOuterLines
                 ? this.renderVerticalLine({
                     ...config,
                     paddingTop,
