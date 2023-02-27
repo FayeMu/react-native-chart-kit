@@ -67,7 +67,7 @@ class LineChart extends AbstractChart {
     } = this.props;
 
     data.forEach(dataset => {
-      if (dataset.withDots == false) return;
+      if (dataset.withDots === false) return;
 
       dataset.data.forEach((x, i) => {
         if (hidePointsAtIndex.includes(i)) {
@@ -204,7 +204,7 @@ class LineChart extends AbstractChart {
     });
 
     data.forEach(dataset => {
-      if (dataset.withScrollableDot == false) return;
+      if (dataset.withScrollableDot === false) return;
 
       const perData = width / dataset.data.length;
       let values = [];
