@@ -534,12 +534,12 @@ class LineChart extends AbstractChart {
       count = segments;
     }
 
-    const legendOffset = this.props.data.legend ? height * 0.15 : 0;
+    const legendOffset = 0;
 
     return (
       <View style={style}>
         <Svg
-          height={height + paddingBottom}
+          height={height + paddingBottom + legendOffset}
           width={width - margin * 2 - marginRight}
         >
           <Rect
