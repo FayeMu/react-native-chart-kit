@@ -539,7 +539,7 @@ class LineChart extends AbstractChart {
     return (
       <View style={style}>
         <Svg
-          height={height + paddingBottom + legendOffset}
+          height={height + paddingBottom}
           width={width - margin * 2 - marginRight}
         >
           <Rect
